@@ -3,7 +3,7 @@
         stages {
             stage ('scm') {
               steps {
-                  git branch: 'master',url: 'https://github.com/amireddymounika/game-of-life.git'
+                  git 'https://github.com/amireddymounika/game-of-life.git'
                }
            }
             stage ('build') {
@@ -20,4 +20,3 @@
             }
         }
    }
-
